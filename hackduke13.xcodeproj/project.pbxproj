@@ -14,6 +14,11 @@
 		41E9D6541838424D00971F6E /* OverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41E9D6491838424D00971F6E /* OverlayView.xib */; };
 		41E9D658183844E200971F6E /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E9D657183844E200971F6E /* MessageViewController.m */; };
 		41E9D65B1838497800971F6E /* MapPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E9D65A1838497800971F6E /* MapPostViewController.m */; };
+		DC235AAF1838C1D400070F2E /* DBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC235AAE1838C1D400070F2E /* DBViewController.m */; };
+		DC235AB41838C1E000070F2E /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = DC235AB11838C1E000070F2E /* MapViewAnnotation.m */; };
+		DC235AB51838C1E000070F2E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC235AB31838C1E000070F2E /* MapViewController.m */; };
+		DC235AB81838C20E00070F2E /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC235AB61838C20E00070F2E /* FacebookSDK.framework */; };
+		DC235AB91838C20F00070F2E /* FBUserSettingsViewResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DC235AB71838C20E00070F2E /* FBUserSettingsViewResources.bundle */; };
 		DC93FA69183824F400947E1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC93FA68183824F400947E1A /* Foundation.framework */; };
 		DC93FA6B183824F400947E1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC93FA6A183824F400947E1A /* CoreGraphics.framework */; };
 		DC93FA6D183824F400947E1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC93FA6C183824F400947E1A /* UIKit.framework */; };
@@ -64,6 +69,14 @@
 		41E9D657183844E200971F6E /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MessageViewController.m; path = hackduke13/hackduke13/MessageViewController.m; sourceTree = "<group>"; };
 		41E9D6591838497800971F6E /* MapPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapPostViewController.h; path = hackduke13/hackduke13/MapPostViewController.h; sourceTree = "<group>"; };
 		41E9D65A1838497800971F6E /* MapPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapPostViewController.m; path = hackduke13/hackduke13/MapPostViewController.m; sourceTree = "<group>"; };
+		DC235AAD1838C1D400070F2E /* DBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBViewController.h; sourceTree = "<group>"; };
+		DC235AAE1838C1D400070F2E /* DBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBViewController.m; sourceTree = "<group>"; };
+		DC235AB01838C1E000070F2E /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
+		DC235AB11838C1E000070F2E /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
+		DC235AB21838C1E000070F2E /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DC235AB31838C1E000070F2E /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DC235AB61838C20E00070F2E /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		DC235AB71838C20E00070F2E /* FBUserSettingsViewResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBUserSettingsViewResources.bundle; sourceTree = "<group>"; };
 		DC93FA65183824F400947E1A /* hackduke13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackduke13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC93FA68183824F400947E1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DC93FA6A183824F400947E1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -116,6 +129,7 @@
 				DC93FAB51838294D00947E1A /* SystemConfiguration.framework in Frameworks */,
 				DC93FA6B183824F400947E1A /* CoreGraphics.framework in Frameworks */,
 				DC93FA6D183824F400947E1A /* UIKit.framework in Frameworks */,
+				DC235AB81838C20E00070F2E /* FacebookSDK.framework in Frameworks */,
 				DC93FAA1183828F900947E1A /* libsqlite3.dylib in Frameworks */,
 				DC93FA69183824F400947E1A /* Foundation.framework in Frameworks */,
 			);
@@ -156,6 +170,8 @@
 		DC93FA67183824F400947E1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DC235AB61838C20E00070F2E /* FacebookSDK.framework */,
+				DC235AB71838C20E00070F2E /* FBUserSettingsViewResources.bundle */,
 				DC93FAB61838295700947E1A /* MapKit.framework */,
 				DC93FAA21838294D00947E1A /* Accounts.framework */,
 				DC93FAA31838294D00947E1A /* AdSupport.framework */,
@@ -179,6 +195,12 @@
 		DC93FA6E183824F400947E1A /* hackduke13 */ = {
 			isa = PBXGroup;
 			children = (
+				DC235AB01838C1E000070F2E /* MapViewAnnotation.h */,
+				DC235AB11838C1E000070F2E /* MapViewAnnotation.m */,
+				DC235AB21838C1E000070F2E /* MapViewController.h */,
+				DC235AB31838C1E000070F2E /* MapViewController.m */,
+				DC235AAD1838C1D400070F2E /* DBViewController.h */,
+				DC235AAE1838C1D400070F2E /* DBViewController.m */,
 				41E9D63F1838424D00971F6E /* APLViewController.h */,
 				41E9D6401838424D00971F6E /* APLViewController.m */,
 				41E9D656183844E200971F6E /* MessageViewController.h */,
@@ -310,6 +332,7 @@
 				DC93FA7F183824F400947E1A /* Main_iPad.storyboard in Resources */,
 				DC93FA84183824F400947E1A /* Images.xcassets in Resources */,
 				DC93FA7C183824F400947E1A /* Main_iPhone.storyboard in Resources */,
+				DC235AB91838C20F00070F2E /* FBUserSettingsViewResources.bundle in Resources */,
 				DC93FA73183824F400947E1A /* InfoPlist.strings in Resources */,
 				41E9D64F1838424D00971F6E /* Default.png in Resources */,
 				41E9D6541838424D00971F6E /* OverlayView.xib in Resources */,
@@ -334,6 +357,9 @@
 			files = (
 				DC93FA82183824F400947E1A /* ViewController.m in Sources */,
 				41E9D65B1838497800971F6E /* MapPostViewController.m in Sources */,
+				DC235AB41838C1E000070F2E /* MapViewAnnotation.m in Sources */,
+				DC235AB51838C1E000070F2E /* MapViewController.m in Sources */,
+				DC235AAF1838C1D400070F2E /* DBViewController.m in Sources */,
 				41E9D658183844E200971F6E /* MessageViewController.m in Sources */,
 				DC93FA79183824F400947E1A /* AppDelegate.m in Sources */,
 				41E9D64D1838424D00971F6E /* APLViewController.m in Sources */,
@@ -474,6 +500,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Felix/Documents/hackdukenew,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hackduke13/hackduke13-Prefix.pch";
 				INFOPLIST_FILE = "hackduke13/hackduke13-Info.plist";
@@ -487,6 +517,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Felix/Documents/hackdukenew,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "hackduke13/hackduke13-Prefix.pch";
 				INFOPLIST_FILE = "hackduke13/hackduke13-Info.plist";
